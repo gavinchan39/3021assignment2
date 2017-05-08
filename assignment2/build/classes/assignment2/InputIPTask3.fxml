@@ -21,6 +21,6 @@
       <Label layoutX="160.0" layoutY="199.0" text="Host IP address :" />
       <TextField fx:id="hostIPAddress" layoutX="290.0" layoutY="194.0" prefHeight="30.0" prefWidth="170.0" />
       <Button fx:id="createGame" layoutX="475.0" layoutY="140.0" mnemonicParsing="false" onAction="#openServer" text="Create Game" />
-      <Button fx:id="joinGame" layoutX="484.0" layoutY="194.0" mnemonicParsing="false" text="Join Game" />
+      <Button fx:id="joinGame" layoutX="484.0" layoutY="194.0" mnemonicParsing="false" onAction="#beClient" text="Join Game" />
    </children>
 </AnchorPane>

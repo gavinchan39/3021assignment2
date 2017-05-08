@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="assignment2.task3ClientController">
+   <children>
+      <ImageView fx:id="head1" fitHeight="82.0" fitWidth="83.0" layoutX="50.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@figure/castle_0.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="city1" fitHeight="82.0" fitWidth="83.0" layoutX="193.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@figure/castle_1.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="city2" fitHeight="82.0" fitWidth="83.0" layoutX="336.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@figure/castle_1.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="city3" fitHeight="82.0" fitWidth="83.0" layoutX="479.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@figure/castle_1.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="head2" fitHeight="82.0" fitWidth="83.0" layoutX="622.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@figure/castle_0.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="soldier0" fitHeight="42.0" fitWidth="42.0" layoutX="45.0" layoutY="132.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@figure/empty_grey.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="soldier1" fitHeight="42.0" fitWidth="42.0" layoutX="91.0" layoutY="132.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@figure/empty_grey.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="soldier2" fitHeight="42.0" fitWidth="42.0" layoutX="193.0" layoutY="132.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@figure/empty_grey.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="soldier3" fitHeight="42.0" fitWidth="42.0" layoutX="239.0" layoutY="132.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@figure/empty_grey.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="soldier4" fitHeight="42.0" fitWidth="42.0" layoutX="336.0" layoutY="132.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@figure/empty_grey.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="soldier5" fitHeight="42.0" fitWidth="42.0" layoutX="382.0" layoutY="132.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@figure/empty_grey.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="soldier6" fitHeight="42.0" fitWidth="42.0" layoutX="479.0" layoutY="132.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@figure/empty_grey.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="soldier7" fitHeight="42.0" fitWidth="42.0" layoutX="525.0" layoutY="132.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@figure/empty_grey.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="soldier9" fitHeight="42.0" fitWidth="42.0" layoutX="668.0" layoutY="132.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@figure/empty_grey.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="soldier8" fitHeight="42.0" fitWidth="42.0" layoutX="622.0" layoutY="132.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@figure/empty_grey.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="flag0" fitHeight="42.0" fitWidth="42.0" layoutX="70.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="flag1" fitHeight="42.0" fitWidth="42.0" layoutX="213.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="flag2" fitHeight="42.0" fitWidth="42.0" layoutX="356.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="flag3" fitHeight="42.0" fitWidth="42.0" layoutX="499.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="flag4" fitHeight="42.0" fitWidth="42.0" layoutX="642.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="gameStart" layoutX="45.0" layoutY="184.0" mnemonicParsing="false" onAction="#startGame" text="Game start!!" />
+      <ScrollPane layoutX="45.0" layoutY="230.0" prefHeight="350.0" prefWidth="269.0">
+        <content>
+          <AnchorPane prefHeight="350.0" prefWidth="244.0">
+               <children>
+                  <TextFlow fx:id="textFlow0" layoutX="4.0" prefHeight="350.0" prefWidth="263.0" />
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+      <Button fx:id="nextTurn0" layoutX="187.0" layoutY="184.0" mnemonicParsing="false" onAction="#nextTurn" text="Next turn" />
+      <Button fx:id="button0" layoutX="461.0" layoutY="433.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#clickButton" onMouseEntered="#showHoverInfo" prefHeight="60.0" prefWidth="60.0" />
+      <Button fx:id="button1" layoutX="531.0" layoutY="433.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#clickButton" onMouseEntered="#showHoverInfo" prefHeight="60.0" prefWidth="60.0" />
+      <Button fx:id="button2" layoutX="603.0" layoutY="433.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#clickButton" onMouseEntered="#showHoverInfo" prefHeight="60.0" prefWidth="60.0" />
+      <Button fx:id="button3" layoutX="461.0" layoutY="507.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#clickButton" onMouseEntered="#showHoverInfo" prefHeight="60.0" prefWidth="60.0" />
+      <Button fx:id="button4" layoutX="531.0" layoutY="507.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#clickButton" onMouseEntered="#showHoverInfo" prefHeight="60.0" prefWidth="60.0" />
+      <Button fx:id="button5" layoutX="603.0" layoutY="507.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#clickButton" onMouseEntered="#showHoverInfo" prefHeight="60.0" prefWidth="60.0" />
+      <Label layoutX="577.0" layoutY="184.0" prefHeight="32.0" prefWidth="87.0" text="Time : " textFill="#2f37cc">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="381.0" layoutY="183.0" prefHeight="32.0" prefWidth="131.0" text="Life Element : " textFill="#2f37cc">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lifeElementText" layoutX="502.0" layoutY="183.0" prefHeight="32.0" prefWidth="69.0" text="hihi" textFill="#2f37cc">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="timeText" layoutX="634.0" layoutY="184.0" prefHeight="32.0" prefWidth="69.0" text="hihi" textFill="#2f37cc">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="update" layoutX="289.0" layoutY="186.0" mnemonicParsing="false" onAction="#updateText" text="update" />
+      <GridPane fx:id="gridPane" layoutX="350.0" layoutY="250.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label alignment="CENTER" prefHeight="20.0" prefWidth="101.0" text="Type :" textAlignment="CENTER" textFill="#f81f1f" />
+            <Label alignment="CENTER" prefHeight="20.0" prefWidth="101.0" text="Party :" textAlignment="CENTER" textFill="#f81f1f" GridPane.rowIndex="1" />
+            <Label alignment="CENTER" prefHeight="20.0" prefWidth="101.0" text="ID :" textAlignment="CENTER" textFill="#f81f1f" GridPane.rowIndex="2" />
+            <Label alignment="CENTER" prefHeight="20.0" prefWidth="101.0" text="Location :" textAlignment="CENTER" textFill="#f81f1f" GridPane.rowIndex="3" />
+            <Label alignment="CENTER" prefHeight="20.0" prefWidth="101.0" text="HP :" textAlignment="CENTER" textFill="#f81f1f" GridPane.columnIndex="2" />
+            <Label alignment="CENTER" prefHeight="20.0" prefWidth="101.0" text="Attack :" textAlignment="CENTER" textFill="#f81f1f" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <Label alignment="CENTER" prefHeight="20.0" prefWidth="101.0" text="Kill :" textAlignment="CENTER" textFill="#f81f1f" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <Label alignment="CENTER" prefHeight="20.0" prefWidth="101.0" text="Step :" textAlignment="CENTER" textFill="#f81f1f" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <Label fx:id="typeText" alignment="CENTER" contentDisplay="CENTER" prefHeight="20.0" prefWidth="95.0" text="hihi" GridPane.columnIndex="1" />
+            <Label fx:id="partyText" alignment="CENTER" contentDisplay="CENTER" prefHeight="20.0" prefWidth="95.0" text="hihi" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label fx:id="idText" alignment="CENTER" contentDisplay="CENTER" prefHeight="20.0" prefWidth="95.0" text="hihi" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label fx:id="locationText" alignment="CENTER" contentDisplay="CENTER" prefHeight="20.0" prefWidth="95.0" text="hihi" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Label fx:id="hpText" alignment="CENTER" contentDisplay="CENTER" prefHeight="20.0" prefWidth="95.0" text="hihi" GridPane.columnIndex="3" />
+            <Label fx:id="attackText" alignment="CENTER" contentDisplay="CENTER" prefHeight="20.0" prefWidth="95.0" text="hihi" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+            <Label fx:id="killText" alignment="CENTER" contentDisplay="CENTER" prefHeight="20.0" prefWidth="95.0" text="hihi" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+            <Label fx:id="stepText" alignment="CENTER" contentDisplay="CENTER" prefHeight="20.0" prefWidth="95.0" text="hihi" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+         </children>
+      </GridPane>
+      <Label fx:id="countDownLabel" layoutX="603.0" layoutY="26.0" text="Label" />
+   </children>
+</AnchorPane>

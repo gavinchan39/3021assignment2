@@ -6,6 +6,7 @@
 package assignment2;
 
 import World.World;
+import java.net.ServerSocket;
 import java.net.Socket;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -21,7 +22,7 @@ import javafx.stage.Stage;
 public class Assignment2 extends Application {
     
     public static Stage mainStage;
-    public static Scene scene1, scene2, scene3, scene4, scene5, scene6, scene7, scene8;
+    public static Scene scene1, scene2, scene3, scene4, scene5, scene6, scene7, scene8, scene9;
     private static Assignment2 instance;
     
     public static int lifeElement;
@@ -35,7 +36,9 @@ public class Assignment2 extends Application {
     
     public static String console="";
     public static Socket socket;
+    public static Socket socket1;
     public static String serverIP;
+    public static ServerSocket serverSocket;
    
     
     @Override
@@ -61,8 +64,11 @@ public class Assignment2 extends Application {
         Parent root7 = FXMLLoader.load(getClass().getResource("InputTask3.fxml"));
         scene7 = new Scene(root7);
         
-       // Parent root8 = FXMLLoader.load(getClass().getResource("task3.fxml"));
-       // scene8 = new Scene(root8);
+       Parent root8 = FXMLLoader.load(getClass().getResource("task3.fxml"));
+       scene8 = new Scene(root8);
+       
+        Parent root9 = FXMLLoader.load(getClass().getResource("task3Client.fxml"));
+       scene9 = new Scene(root9);
         
         mainStage = stage;
         

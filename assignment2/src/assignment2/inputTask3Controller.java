@@ -5,8 +5,12 @@
  */
 package assignment2;
 
+import java.io.DataOutputStream;
+import java.io.IOException;
+import java.io.ObjectOutputStream;
 import java.net.URL;
 import java.util.ResourceBundle;
+import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -57,7 +61,39 @@ public class inputTask3Controller implements Initializable {
          
          //System.out.println("change scene");
          Assignment2.updateCityPosition();
-         Assignment2.mainStage.setScene(Assignment2.scene8);
+//         Assignment2.mainStage.setScene(Assignment2.scene8);
+         
+         
+    new Thread( () -> {
+      try {
+        String temp = ""+Assignment2.lifeElement+","+Assignment2.numberOfCity+","+Assignment2.maxTime
+                       +","+Assignment2.HP[0]+","+Assignment2.HP[1]+","+Assignment2.HP[2]+","
+                        +Assignment2.HP[3]+","+Assignment2.HP[4]+","+Assignment2.Attack[0]+","
+                        +Assignment2.Attack[1]+","+Assignment2.Attack[2]+","+Assignment2.Attack[3]+","
+                        +Assignment2.Attack[4]+","+"99";
+        DataOutputStream outputToClient = new DataOutputStream(
+          Assignment2.socket.getOutputStream());
+        while(true)
+             {
+                outputToClient.writeUTF(temp);
+                //outputToClient.writeInt(11);
+                
+                
+             }
+
+                    }
+        catch(IOException ex) {
+        ex.printStackTrace();
+      }
+        Platform.runLater(() -> {
+
+                Assignment2.mainStage.setScene(Assignment2.scene8);
+          });
+      
+    }).start();
+
+         
+
     }
     
         @FXML
