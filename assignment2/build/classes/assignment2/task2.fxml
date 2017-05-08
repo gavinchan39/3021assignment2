@@ -127,7 +127,6 @@
             <Font name="System Bold" size="18.0" />
          </font>
       </Label>
-      <Button fx:id="update" layoutX="289.0" layoutY="186.0" mnemonicParsing="false" onAction="#updateText" text="update" />
       <GridPane fx:id="gridPane" layoutX="350.0" layoutY="250.0">
         <columnConstraints>
           <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -160,6 +159,6 @@
             <Label fx:id="stepText" alignment="CENTER" contentDisplay="CENTER" prefHeight="20.0" prefWidth="95.0" text="hihi" GridPane.columnIndex="3" GridPane.rowIndex="3" />
          </children>
       </GridPane>
-      <Label fx:id="countDownLabel" layoutX="603.0" layoutY="26.0" text="Label" />
+      <Label fx:id="countDownLabel" layoutX="603.0" layoutY="26.0" />
    </children>
 </AnchorPane>

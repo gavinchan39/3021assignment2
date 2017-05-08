@@ -77,7 +77,10 @@ public class inputTask3Controller implements Initializable {
              {
                 outputToClient.writeUTF(temp);
                 //outputToClient.writeInt(11);
-                
+                Platform.runLater(() -> {
+
+                Assignment2.mainStage.setScene(Assignment2.scene8);
+          });
                 
              }
 
@@ -85,10 +88,7 @@ public class inputTask3Controller implements Initializable {
         catch(IOException ex) {
         ex.printStackTrace();
       }
-        Platform.runLater(() -> {
-
-                Assignment2.mainStage.setScene(Assignment2.scene8);
-          });
+        
       
     }).start();
 
