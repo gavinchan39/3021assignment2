@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="assignment2.assignment1Controller">
+   <children>
+      <Button fx:id="submitParameter" layoutX="282.0" layoutY="382.0" mnemonicParsing="false" onAction="#submit" text="Button1" />
+      <Label fx:id="label" layoutX="282.0" layoutY="443.0" text="Label1" />
+      <ImageView fx:id="head1" fitHeight="82.0" fitWidth="83.0" layoutX="50.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@figure/castle_0.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="city1" fitHeight="82.0" fitWidth="83.0" layoutX="193.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@figure/castle_1.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="city2" fitHeight="82.0" fitWidth="83.0" layoutX="336.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@figure/castle_1.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="city3" fitHeight="82.0" fitWidth="83.0" layoutX="479.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@figure/castle_1.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="head2" fitHeight="82.0" fitWidth="83.0" layoutX="622.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@figure/castle_0.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="soldier0" fitHeight="42.0" fitWidth="42.0" layoutX="45.0" layoutY="132.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@figure/empty_grey.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="soldier1" fitHeight="42.0" fitWidth="42.0" layoutX="91.0" layoutY="132.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@figure/empty_grey.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="soldier2" fitHeight="42.0" fitWidth="42.0" layoutX="193.0" layoutY="132.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@figure/empty_grey.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="soldier3" fitHeight="42.0" fitWidth="42.0" layoutX="239.0" layoutY="132.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@figure/empty_grey.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="soldier4" fitHeight="42.0" fitWidth="42.0" layoutX="336.0" layoutY="132.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@figure/empty_grey.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="soldier5" fitHeight="42.0" fitWidth="42.0" layoutX="382.0" layoutY="132.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@figure/empty_grey.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="soldier6" fitHeight="42.0" fitWidth="42.0" layoutX="479.0" layoutY="132.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@figure/empty_grey.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="soldier7" fitHeight="42.0" fitWidth="42.0" layoutX="525.0" layoutY="132.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@figure/empty_grey.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="soldier9" fitHeight="42.0" fitWidth="42.0" layoutX="668.0" layoutY="132.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@figure/empty_grey.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="soldier8" fitHeight="42.0" fitWidth="42.0" layoutX="622.0" layoutY="132.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@figure/empty_grey.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="flag0" fitHeight="42.0" fitWidth="42.0" layoutX="70.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="flag1" fitHeight="42.0" fitWidth="42.0" layoutX="213.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="flag2" fitHeight="42.0" fitWidth="42.0" layoutX="356.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="flag3" fitHeight="42.0" fitWidth="42.0" layoutX="499.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="flag4" fitHeight="42.0" fitWidth="42.0" layoutX="642.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="gameStart" layoutX="45.0" layoutY="184.0" mnemonicParsing="false" onAction="#startGame" text="Game start!!" />
+      <ScrollPane layoutX="45.0" layoutY="230.0" maxHeight="1.7976931348623157E308" prefHeight="350.0" prefWidth="600.0">
+        <content>
+          <AnchorPane maxHeight="1.7976931348623157E308" minHeight="0.0" minWidth="0.0">
+               <children>
+                  <TextFlow fx:id="textFlow0" layoutX="8.0" maxHeight="1.7976931348623157E308" prefHeight="350.0" prefWidth="574.0" />
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+      <Button fx:id="nextTurn0" layoutX="187.0" layoutY="184.0" mnemonicParsing="false" onAction="#nextTurn" text="Next turn" />
+   </children>
+</AnchorPane>

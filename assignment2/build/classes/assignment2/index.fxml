@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="assignment2.FXMLDocumentController">
+    <children>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="131.0" layoutY="222.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../3021Assignment2/figure/castle_0.png" />
+         </image>
+      </ImageView>
+        <Button fx:id="button" layoutX="328.0" layoutY="285.0" onAction="#singlePlayer" text="        Single Player        " />
+      <Button fx:id="button1" layoutX="328.0" layoutY="227.0" mnemonicParsing="false" onAction="#display" text="Display Assignment 1" />
+      <Button fx:id="button3" layoutX="328.0" layoutY="342.0" mnemonicParsing="false" onAction="#MultiPlayer" text="         Multi Player         " />
+      <Text layoutX="131.0" layoutY="170.0" strokeType="OUTSIDE" strokeWidth="0.0" text="World Of Warcraft" textAlignment="CENTER">
+         <font>
+            <Font size="64.0" />
+         </font>
+      </Text>
+    </children>
+</AnchorPane>

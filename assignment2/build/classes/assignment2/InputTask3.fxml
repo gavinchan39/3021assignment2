@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="assignment2.inputTask2Controller">
+   <children>
+      <VBox layoutX="129.0" layoutY="80.0" prefHeight="122.0" prefWidth="342.0">
+         <children>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Start Life element : " />
+                  <TextField fx:id="lifeElement" promptText="99" text="99" />
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="    Number of City :  " />
+                  <TextField fx:id="numberOfCity" promptText="3" text="3" />
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="71.0" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="    Maximum Time :  " />
+                  <TextField fx:id="maxTime" promptText="1000" text="1000" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <Text layoutX="69.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Please enter the parameter below ">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Text>
+      <Button fx:id="submitParameter" layoutX="482.0" layoutY="328.0" mnemonicParsing="false" onAction="#submit" text="Submit" />
+      <TextField fx:id="HP0" layoutX="114.0" layoutY="244.0" prefHeight="12.0" prefWidth="53.0" promptText="10" text="10" />
+      <TextField fx:id="HP1" layoutX="194.0" layoutY="244.0" prefHeight="12.0" prefWidth="53.0" promptText="20" text="20" />
+      <TextField fx:id="HP2" layoutX="274.0" layoutY="244.0" prefHeight="12.0" prefWidth="53.0" promptText="50" text="50" />
+      <TextField fx:id="HP3" layoutX="346.0" layoutY="244.0" prefHeight="12.0" prefWidth="53.0" promptText="50" text="50" />
+      <TextField fx:id="HP4" layoutX="418.0" layoutY="244.0" prefHeight="12.0" prefWidth="53.0" promptText="30" text="30" />
+      <TextField fx:id="Attack0" layoutX="114.0" layoutY="287.0" prefHeight="12.0" prefWidth="53.0" promptText="20" text="20" />
+      <TextField fx:id="Attack1" layoutX="194.0" layoutY="287.0" prefHeight="12.0" prefWidth="53.0" promptText="50" text="50" />
+      <TextField fx:id="Attack2" layoutX="274.0" layoutY="287.0" prefHeight="12.0" prefWidth="53.0" promptText="50" text="50" />
+      <TextField fx:id="Attack3" layoutX="346.0" layoutY="287.0" prefHeight="12.0" prefWidth="53.0" promptText="50" text="50" />
+      <TextField fx:id="Attack4" layoutX="418.0" layoutY="287.0" prefHeight="12.0" prefWidth="53.0" promptText="50" text="50" />
+      <Text layoutX="114.0" layoutY="226.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dragon" />
+      <Text layoutX="202.0" layoutY="226.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ninja" />
+      <Text layoutX="274.0" layoutY="226.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Iceman" />
+      <Text layoutX="357.0" layoutY="226.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lion" />
+      <Text layoutX="428.0" layoutY="226.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Wolf" />
+      <Text layoutX="69.0" layoutY="260.0" strokeType="OUTSIDE" strokeWidth="0.0" text="HP" />
+      <Text layoutX="25.0" layoutY="308.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Attack Value" />
+   </children>
+</AnchorPane>
